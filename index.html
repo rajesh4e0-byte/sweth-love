@@ -11,15 +11,14 @@
       font-family:sans-serif; 
       margin:0;
       overflow:hidden;
-
-      /* beautiful gradient background */
       background: linear-gradient(135deg, #ff758c, #ff7eb3);
       color:white;
     }
 
     h1 { 
-      margin-top:120px; 
-      font-size:32px;
+      margin-top:100px; 
+      font-size:30px;
+      line-height:1.5;
     }
 
     button { 
@@ -43,7 +42,6 @@
       color:black;
     }
 
-    /* floating hearts */
     .heart {
       position:absolute;
       color:red;
@@ -60,13 +58,16 @@
 
 <body>
 
-<h1>Sweth 💖<br><br>Will you be mine forever? 💙</h1>
+<h1>
+  Happy 1 Week Anniversary 💖<br><br>
+  Sweth ❤️<br><br>
+  Will you be mine forever? 💙
+</h1>
 
 <button id="yes" onclick="yesClicked()">Yes 💖</button> <button id="no" onmouseover="moveNo()">No 😢</button>
 
 <script>
 
-/* FIRST PAGE HEARTS */
 startHearts();
 
 function yesClicked() {
@@ -74,15 +75,12 @@ function yesClicked() {
   document.body.innerHTML = `
   <div style="position:relative; height:100vh; width:100vw; overflow:hidden;">
 
-    <!-- Left Image -->
     <img src="/sweth-love/sweth.jpg"
          style="position:absolute; left:0; top:0; width:50%; height:100%; object-fit:cover;">
 
-    <!-- Right Image -->
     <img src="/sweth-love/raju.jpg"
          style="position:absolute; right:0; top:0; width:50%; height:100%; object-fit:cover;">
 
-    <!-- Center Message -->
     <div style="
       position:absolute;
       top:50%;
@@ -97,15 +95,15 @@ function yesClicked() {
       box-shadow:0 0 20px rgba(255,255,255,0.3);
     ">
       <h1>
+        Happy 1 Week Anniversary 💖<br><br>
         You're my world ma 💙<br><br>
         Love you forever Sweth ❤️<br>
-        - Rajuuu 😘
+        - Yours Rajuuu 😘
       </h1>
     </div>
 
   </div>
 
-  <!-- Romantic Music -->
   <audio autoplay loop>
     <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
   </audio>
