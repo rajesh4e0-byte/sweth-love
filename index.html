@@ -5,9 +5,20 @@
   <title>For Sweth ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { text-align:center; font-family:sans-serif; background:#ff7eb3; color:white; }
+    body { 
+      text-align:center; 
+      font-family:sans-serif; 
+      background:#ff7eb3; 
+      color:white; 
+    }
     h1 { margin-top:100px; }
-    button { padding:12px 20px; margin:10px; border:none; border-radius:10px; }
+    button { 
+      padding:12px 20px; 
+      margin:10px; 
+      border:none; 
+      border-radius:10px; 
+      cursor:pointer;
+    }
     #yes { background:#ff2e63; color:white; }
     #no { position:absolute; }
   </style>
@@ -20,8 +31,31 @@
 
 <script>
 function yesClicked() {
-  document.body.innerHTML = "<h1>You're my world ma 💙<br>Love you forever Sweth ❤️<br>- Rajuuu 😘</h1>";
+  document.body.innerHTML = `
+  <div style="
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('sweth.jpg'),
+                url('raju.jpg');
+
+    background-size: cover, cover, cover;
+    background-position: center, left center, right center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  ">
+    <h1>
+      You're my world ma 💙<br><br>
+      Love you forever Sweth ❤️<br>
+      - Rajuuu 😘
+    </h1>
+  </div>`;
 }
+
 function moveNo() {
   let x = Math.random()*window.innerWidth;
   let y = Math.random()*window.innerHeight;
