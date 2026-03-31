@@ -10,6 +10,7 @@
       font-family:sans-serif; 
       background:#ff7eb3; 
       color:white; 
+      overflow:hidden;
     }
     h1 { margin-top:100px; }
     button { 
@@ -35,32 +36,44 @@ function yesClicked() {
   <div style="
     height:100vh;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('sweth.jpg'),
-                url('raju.jpg');
-
-    background-size: cover, cover, cover;
-    background-position: center, left center, right center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
   ">
-    <h1>
-      You're my world ma 💙<br><br>
-      Love you forever Sweth ❤️<br>
-      - Rajuuu 😘
-    </h1>
+    
+    <div style="
+      flex:1;
+      background:url('sweth.jpg') no-repeat center/cover;
+    "></div>
+
+    <div style="
+      flex:1;
+      background:url('raju.jpg') no-repeat center/cover;
+    "></div>
+
+    <div style="
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      text-align:center;
+      color:white;
+      background:rgba(0,0,0,0.4);
+      padding:20px;
+      border-radius:12px;
+    ">
+      <h1>
+        You're my world ma 💙<br><br>
+        Love you forever Sweth ❤️<br>
+        - Rajuuu 😘
+      </h1>
+    </div>
+
   </div>`;
 }
 
 function moveNo() {
   let x = Math.random()*window.innerWidth;
   let y = Math.random()*window.innerHeight;
-  document.getElementById("no").style.left=x+"px";
-  document.getElementById("no").style.top=y+"px";
+  document.getElementById("no").style.left = x + "px";
+  document.getElementById("no").style.top = y + "px";
 }
 </script>
 
